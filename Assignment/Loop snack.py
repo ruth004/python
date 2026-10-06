@@ -23,7 +23,7 @@ for counter in range(50, 101):
  print("/n/n6. Divisible by 3 and 5:")
  	for counter in range(1,101):
  		if counter%3 == 0 and counter% 5 == 0:
- 			print(counter
+ 			print(counter)
  
  
  print(/n/n7. count divisible by 7")
