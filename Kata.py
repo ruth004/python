@@ -1,0 +1,84 @@
+def iseven(self,num):
+if num % 2 == 0:
+
+print(num, "is Even -> True")
+return True
+
+
+else:
+print(num,"is odd -> False")
+return False
+
+def isprimeNumber(n)
+if n <= 1:
+
+print(n,"is not prime -> false")
+return false
+
+for i in range (2,int(math.squrt(n)) + 1)
+if n % i == 0:
+
+return false
+print (n, "is prime -> true")
+return true
+
+
+def subtract(a,b):
+if a > b:
+return a-b
+else:
+return b-a
+
+
+def divided(a/b):
+if b == 0:
+print("cannot divided by 0")
+return 0
+result = a/b
+
+print(a, "/", b,"=", result)
+return result
+
+def factorof( b ):
+count = 0
+for i in range (1,b + 1):
+if b % i == 0:
+count = count + 1
+ return count
+ 
+ 
+ 
+ def issquare(x):
+ root = int(math.sqrt(x))
+ if root * root == x:
+ print(x, "is sqare number")
+ return true
+ else:
+ print(x,"is not square ")
+ return false
+ 
+ 
+ def ispalindrome(y)
+ s == str(y)
+ if s == s[::-1]
+
+print(y,"is palindrome")
+	return true 
+else:
+	print(y,"is not palindrome")
+	return false
+	
+	
+def factorialof(number):
+result = 1
+for i in range (1,number + 1):
+result * = 1
+return result
+
+
+def squareof(self count)
+return count *count
+print( " square of", count, "is", number)
+return number
+
+
