@@ -1,0 +1,98 @@
+def length_of_string(word):
+	return len(word)
+	
+	
+def first_last_two_letter(word):
+	if len(word) > 1:
+		print (word[0],word[1],word[len(word)-2],word[len(word)-1], sep = "",end = "")
+	return ""	
+
+
+def add_extra_word(word):
+	if word[-3:] == "ing":
+		return word+"ly"
+	if len(word) >= 3:
+		return word+"ing"
+	if len(word) < 3:
+		return word	
+
+
+def longest_word_and_length_in_list(word):
+
+	longest_word = word[0]
+	longest_length = len(word[0])
+	for content in word:
+		if len(content) > longest_length:
+			longest_length = len(content)
+			longest_word = content
+
+
+	print(longest_word, ",",longest_length, sep = "",end = "")
+	return ""
+		
+	
+			
+def odd_index_remover(word):
+	return word[1::2]
+
+	
+def minimum_in_list(numbers):
+
+	min_number = numbers[0]
+	for number in numbers:
+		if number < min_number:
+			min_number = number
+	return min_number
+
+
+
+def maximum_in_listrepeat(numbers):
+
+	max_number = numbers[0]
+	for number in numbers:
+		if number > max_number:
+			max_number = number
+	return max_number	
+
+
+def string_number_(word,number):
+	if number.is_integer():
+		return word * number
+	else:
+		return word
+
+	
+def list_square(numbers):
+	squared_list = []
+	for number in numbers:
+		number = number ** 2
+		squared_list.append(number)
+	return squared_list
+
+	
+def sum_of_list_square(numbers):
+	squared_list = []
+	sum_of_number = 0
+	for number in numbers:
+		number = number ** 2
+		squared_list.append(number)
+	for number in squared_list:
+		sum_of_number = sum_of_number + number
+	return sum_of_number	
+
+
+print(length_of_string("semicolon"))
+print(first_last_two_letter("semicolon"))
+print(first_last_two_letter("on"))
+print(first_last_two_letter("o"))
+print(add_extra_word("abc"))
+print(add_extra_word("string"))
+print(add_extra_word("on"))
+print(longest_word_and_length_in_list(['welcome','out','weather','mobile','breakfast','journey']))
+print(odd_index_remover("semicolon"))
+print(minimum_in_list([8,4,9,2,5,7,3]))
+print(maximum_in_list([8,4,9,2,5,7,3]))
+print(string_number_repeat("hello",3))
+print(string_number_repeat("hi",4.5))
+print(list_square([2,3,4,5,7]))
+print(sum_of_list_square([2,3,4,5,7]))
