@@ -6,7 +6,7 @@ products = [
     ("USB Cable", 10)
 ]
 
-expensive_products = list(filter(lambda product: product[1] > 100, products))
+expensive_products = list(filter( product: product[1] > 100, products))
 print("Products costing more than 100:")
 print(expensive_products)
 
